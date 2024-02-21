@@ -12,14 +12,14 @@ from tools.tools import adapt_bj_to_normal_url
 if __name__=="__main__":
     load_dotenv()
 
-    linkedin_profile_url = linkedin_lookup_agent(name="GUEDJE Prince Gédéon")
+    linkedin_profile_url = "https://www.linkedin.com/in/engelbert-mephu-nguifo-49b2ab9/"
 
-
+#linkedin_lookup_agent(name="GUEDJE Prince Gédéon")
     print(linkedin_profile_url)
     linkedin_profile_url=adapt_bj_to_normal_url(linkedin_profile_url)
     print(f"URL LINKEDIN FOUND: {linkedin_profile_url}")
 
-    
+
     summary_template= """
     Étant donné les informations {information} sur une personne que je veux que vous me donnez:
     1. Un court résumé
