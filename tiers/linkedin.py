@@ -32,3 +32,12 @@ def scrape_linkedin_profile(linkedin_profile_url:str):
         for group_dict in data.get('groups'):
             group_dict.pop("profile_pic_url")
     return data
+
+"""from linkedin_scraper import Person, actions
+from selenium import webdriver
+driver = webdriver.Chrome()
+
+email = "guedjegedeon03@gmail.com"
+password = "Developpeur"
+actions.login(driver, email, password) # if email and password isnt given, it'll prompt in terminal
+person = Person("https://www.linkedin.com/in/kevindegila/", driver=driver)"""
